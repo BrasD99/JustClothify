@@ -1,0 +1,17 @@
+<!-- Шаблон hello.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to JustClothify!</title>
+</head>
+<body>
+    <h1>Upload your images:</h1>
+    <form action="{{ url_for('hello') }}" method="post" enctype="multipart/form-data">
+        <label for="person_image">Select a person image:</label>
+        <input type="file" id="person_image" name="person_image"><br><br>
+        <label for="clothes_image">Select a clothes image:</label>
+        <input type="file" id="clothes_image" name="clothes_image"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
